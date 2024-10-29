@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-<h1>Welcome to the Dashboard</h1>
-</body>
-</html>
+@extends('layout.layout')
+
+@section('title', 'Dashboard-belitiket.com')
+
+@section('content')
+    <h1 class="text-center text-orange">Hottest Event This Month</h1>
+    <p>This is your main content area.</p>
+
+
+@endsection

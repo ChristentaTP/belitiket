@@ -1,0 +1,135 @@
+/* File: resources/css/style.css */
+
+/* Global Styles */
+html, body {
+    height: 100%; /* Memastikan tinggi html dan body 100% */
+    margin: 0; /* Menghilangkan margin default */
+    font-family: 'Poppins', sans-serif; /* Menerapkan font untuk seluruh halaman */
+    background-color: #392F5A; /* Warna latar belakang ungu */
+    color: white; /* Mengatur warna teks menjadi putih agar kontras */
+    display: flex;
+    flex-direction: column; /* Menyusun elemen dalam kolom */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #392F5A; /* Warna background ungu */
+}
+
+/* Logo Styles */
+.logo .logo-text {
+    font-size: 1.5em;
+    font-weight: 800; /* Extra Bold */
+    color: #392F5A; /* Warna teks untuk logo */
+    background-color: #FFAA00; /* Warna latar belakang kuning */
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 6px solid #F4D06F; /* Menambahkan outline berwarna F4D06F */
+}
+
+/* Avatar and Dropdown Styles */
+.avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-circle {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    color: #392F5A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    border: 6px solid #F4D06F;
+}
+
+.dropdown {
+    display: none; /* Awalnya tersembunyi */
+    position: absolute;
+    top: 50px; /* Jarak dari avatar */
+    right: 0;
+    background-color: #392F5A;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown a {
+    color: orange; /* Tautan berwarna oranye */
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Transisi halus untuk hover */
+}
+
+.dropdown a:hover {
+    background-color: #FFAA00; /* Warna latar belakang saat hover */
+    color: #392F5A; /* Warna teks saat hover */
+}
+
+/* Tampilkan dropdown saat avatar diklik */
+.avatar:hover .dropdown {
+    display: block;
+}
+
+/* Kelas untuk teks oranye dan memusatkan teks */
+.text-orange {
+    color: orange; /* Warna oranye */
+}
+
+.text-center {
+    text-align: center; /* Memusatkan teks */
+}
+
+/* Footer Styles */
+footer {
+    display: flex; /* Menggunakan Flexbox untuk footer */
+    justify-content: space-between; /* Menyusun elemen di kiri dan kanan */
+    align-items: center; /* Memastikan semua elemen berada di tengah secara vertikal */
+    padding: 20px;
+    background-color: #FF8811; /* Warna latar belakang orange */
+    color: white; /* Warna teks putih untuk kontras */
+    margin-top: auto; /* Memastikan footer tetap di bawah */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan kotak */
+    border-top: 6px solid #F4D06F; /* Outline kuning hanya di atas footer */
+}
+
+/* Untuk memastikan warna ungu untuk tulisan */
+footer em {
+    color: #392F5A; /* Warna ungu untuk teks italic */
+}
+
+/* Memusatkan teks di footer */
+footer p {
+    margin: 0; /* Menghilangkan margin default */
+}
+
+/* Teks di tengah footer */
+.footer-content {
+    flex: 1; /* Mengizinkan elemen ini mengisi ruang yang tersedia */
+    text-align: center; /* Memusatkan teks */
+}
+
+.footer-left {
+    flex: 0; /* Mengatur elemen kiri tidak mengisi ruang */
+    text-align: left; /* Mengatur teks di kiri */
+}
+
+.copyright {
+    font-size: 0.8em; /* Mengatur ukuran font menjadi lebih kecil */
+    margin: 0; /* Menghilangkan margin default jika ada */
+}
+
+
+
