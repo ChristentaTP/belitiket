@@ -132,4 +132,83 @@ footer p {
 }
 
 
+//ISI CSS BUAT CARD VIEW BESERTA JS NYA
+
+      /* Carousel Container */
+  .carousel-container {
+      position: relative;
+      width: 80%; /* Atur sesuai kebutuhan */
+      overflow: hidden;
+      margin: 20px auto;
+  }
+
+/* Carousel Flex Container */
+.carousel {
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.card {
+    background-color: #F4D06F;
+    border-radius: 10px;
+    padding: 10px; /* Mengurangi padding agar card lebih ringkas */
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #392F5A;
+    flex: none;
+    overflow: hidden; /* Menghindari isi melampaui batas card */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Membatasi tinggi gambar agar card tidak terlalu tinggi */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Memberi jarak kecil antara gambar dan teks */
+}
+
+.card h3 {
+    font-size: 1.1rem; /* Mengatur ukuran font agar lebih kecil */
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 0.9rem; /* Mengatur ukuran font agar lebih kecil */
+    margin: 5px 0;
+}
+
+
+/* Tombol navigasi */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFAA00;
+    border: none;
+    color: #392F5A;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Efek animasi saat hover pada card */
+.card:hover {
+    transform: scale(1.05); /* Zoom in saat hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Shadow lebih tebal */
+}
+
+
 
