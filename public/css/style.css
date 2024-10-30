@@ -29,6 +29,14 @@ html, body {
     padding: 5px 10px;
     border-radius: 15px;
     border: 6px solid #F4D06F; /* Menambahkan outline berwarna F4D06F */
+    text-decoration: none; /* Menghilangkan underline */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+}
+
+.logo .logo-text:hover{
+    background-color: #392F5A;
+    color: #FFAA00;
+    cursor: pointer;
 }
 
 /* Avatar and Dropdown Styles */
@@ -132,7 +140,7 @@ footer p {
 }
 
 
-//ISI CSS BUAT CARD VIEW BESERTA JS NYA
+         /* TODO ISI CSS BUAT CARD VIEW BESERTA JS NYA*/
 
       /* Carousel Container */
   .carousel-container {
@@ -154,11 +162,12 @@ footer p {
     border-radius: 10px;
     padding: 10px; /* Mengurangi padding agar card lebih ringkas */
     width: 200px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);    /* menambahkan shadow */
     text-align: center;
     color: #392F5A;
     flex: none;
     overflow: hidden; /* Menghindari isi melampaui batas card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
 }
 
 .card img {
@@ -176,7 +185,7 @@ footer p {
 
 .card p {
     font-size: 0.9rem; /* Mengatur ukuran font agar lebih kecil */
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 

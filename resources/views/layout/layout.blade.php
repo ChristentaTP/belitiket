@@ -13,7 +13,7 @@
 <!-- Header Section -->
 <header class="header">
     <div class="logo">
-        <span class="logo-text"><em>belitiket.com</em></span>
+        <a href="/dashboard"  class="logo-text"><em>belitiket.com</em></a>
     </div>
     <nav class="nav-menu">
         <!-- Menu atau navigasi lain bisa ditambahkan di sini -->
@@ -42,8 +42,5 @@
         <p class="copyright">&copy; Copyright Kelompok 6 PBO 2024. All rights reserved.</p>
     </div>
 </footer>
-
-
-
 </body>
 </html>
