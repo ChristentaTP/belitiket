@@ -3,6 +3,7 @@
 @section('title', 'Dashboard-belitiket.com')
 
 @section('content')
+
     <h1 class="text-center text-orange">Hottest Event This Month</h1>
 
     <!-- Carousel Container -->

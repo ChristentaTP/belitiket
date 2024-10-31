@@ -11,7 +11,7 @@ public function run()
 DB::table('events')->insert([
 [
 'nama_acara' => 'SING GUYUB FEST 2024',
-'gambar' => 'images/image.png', // Menggunakan tanda /
+'gambar' => 'image.png', // Menggunakan tanda /
 'detail' => '08 Desember 2024',
 'deskripsi' => 'Festival musik tahunan yang meriah',
 'lokasi' => 'Semarang | Stadion Diponegoro',
@@ -20,7 +20,7 @@ DB::table('events')->insert([
 ],
 [
 'nama_acara' => 'SOUNDSFEST 2024',
-'gambar' => 'images/image2.png',
+'gambar' => 'image2.png',
 'detail' => '22 Desember 2024',
 'deskripsi' => 'Konser musik spektakuler',
 'lokasi' => 'Bekasi | Parkiran Transera Waterpark',
@@ -29,7 +29,7 @@ DB::table('events')->insert([
 ],
 [
 'nama_acara' => 'HARMONI KU 2024',
-'gambar' => 'images/image3.png',
+'gambar' => 'image3.png',
 'detail' => '26 Oktober 2024',
 'deskripsi' => 'Konser musik ssssssssssssssssssssssssssssssssssssssssssss',
 'lokasi' => 'Semarang | Bandara Lama Semarang',
@@ -38,7 +38,7 @@ DB::table('events')->insert([
 ],
 [
 'nama_acara' => 'SAMPOERNA FEST',
-'gambar' => 'images/image4.png',
+'gambar' => 'image4.png',
 'detail' => '9 November 2024',
 'deskripsi' => 'Konser musik ssssssssssssssssssssssssssssssssssssssssssss',
 'lokasi' => 'Semarang | Sam Poo Kong',
