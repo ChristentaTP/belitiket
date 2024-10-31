@@ -160,10 +160,10 @@ footer p {
     border: none;
     color: #392F5A;
     font-size: 20px;
-    width: 40px; /* Sesuaikan ukuran lebar dan tinggi untuk ukuran lingkaran yang Anda inginkan */
+    width: 40px;                                /* Sesuaikan ukuran lebar dan tinggi untuk ukuran lingkaran yang Anda inginkan */
     height: 40px;
     cursor: pointer;
-    border-radius: 50%; /* Membuat tombol menjadi lingkaran */
+    border-radius: 50%;                         /* Membuat tombol menjadi lingkaran */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     z-index: 1;
     display: flex;
