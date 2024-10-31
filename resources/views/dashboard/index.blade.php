@@ -14,7 +14,7 @@
         <div class="carousel">
             @foreach($events as $event)
                 <div class="card">
-                    <img src="{{ asset('images/' . $event->gambar) }}" alt="No Images">// ini buat gambar
+                    <img src="{{ asset('images/' . $event->gambar) }}" alt="No Images">
                     <h3>{{ $event->nama_acara }}</h3>
                     <p>{{ $event->detail }}</p>
                     <p>{{ $event->lokasi }}</p>
