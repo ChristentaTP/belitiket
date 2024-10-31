@@ -7,6 +7,7 @@
     <!-- Link Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
 </head>
 <body>
 
