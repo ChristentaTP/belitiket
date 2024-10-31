@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('detail');
             $table->string('deskripsi');
             $table->string('lokasi');
-            $table->enum('pilihan_tiket',['festival','vip']);
             $table->timestamps();
         });
     }
