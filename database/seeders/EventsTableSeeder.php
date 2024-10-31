@@ -11,7 +11,7 @@ public function run()
 DB::table('events')->insert([
 [
 'nama_acara' => 'SING GUYUB FEST 2024',
-'gambar' => 'image.png', // Menggunakan tanda /
+'gambar' => 'images.png', // Menggunakan tanda /
 'detail' => '08 Desember 2024',
 'deskripsi' => 'Festival musik tahunan yang meriah',
 'lokasi' => 'Semarang | Stadion Diponegoro',
