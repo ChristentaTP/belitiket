@@ -49,14 +49,7 @@ DB::table('events')->insert([
 'nama_acara' => 'Semarang Worship Project 2024',
 'gambar' => 'image5.png',
 'detail' => '20 November 2024',
-'deskripsi' => 'Semarang Worship Project 2024 is coming! ✨
-Siapkan hati untuk malam penyembahan penuh berkat dan kebersamaan. 🙌
-🗓️ 20 November 2024
-📍GBT Kristus Alfa Omega Semarang
-
-with Franky Kuncoro and The Repeats, Michael Rendy, Igen Worship & Unlimited Fire Band
-@frankykuncoro @michaelrendyw @igen_worship
-@unlimitedfireband',
+'deskripsi' => 'Semarang Worship Project 2024 is coming!',
 'lokasi' => 'Semarang | GBT Kristus Alfa Omega ',
 'created_at' => now(),
 'updated_at' => now(),
