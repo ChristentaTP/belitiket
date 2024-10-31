@@ -9,8 +9,8 @@
     <!-- Carousel Container -->
     <div class="carousel-container">
         <!-- Navigation Arrows -->
-        <button class="prev" onclick="scrollLeft()">&#10094;</button>
-        <button class="next" onclick="scrollRight()">&#10095;</button>
+        <button class="prev" onclick="scrollCarousel(-1)">&#10094;</button>
+
 
         <div class="carousel">
             <!-- Card 1 -->
@@ -55,24 +55,15 @@
                 <p>Semarang | Simpang Lima</p>
             </div>
         </div>
+        <button class="next" onclick="scrollCarousel(1)">&#10095;</button>
     </div>
 
     <!-- JavaScript -->
     <script>
-        const carousel = document.querySelector('.carousel');
-
-        function scrollLeft() {
-            carousel.scrollBy({
-                left: -220, // Sesuaikan dengan lebar card + gap
-                behavior: 'smooth'
-            });
-        }
-
-        function scrollRight() {
-            carousel.scrollBy({
-                left: 220, // Sesuaikan dengan lebar card + gap
-                behavior: 'smooth'
-            });
+        function scrollCarousel(direction) {
+            const carousel = document.querySelector('.carousel');
+            const cardWidth = document.querySelector('.card').offsetWidth;
+            carousel.scrollBy({ left: cardWidth * direction, behavior: 'smooth' });
         }
     </script>
 
