@@ -21,7 +21,7 @@
     <div class="avatar">
         <div class="avatar-circle">L</div>
         <div class="dropdown">
-            <a href="#">Profile</a>
+            <a href="{{ route('profile.index') }}">Profile</a> <!-- Update the href route -->
             <a href="#">Logout</a>
         </div>
     </div>
