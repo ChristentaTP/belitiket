@@ -148,6 +148,7 @@ footer p {
       width: 80%; /* Atur sesuai kebutuhan */
       overflow: hidden;
       margin: 0 auto;
+
   }
 
 
@@ -169,6 +170,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .prev {
@@ -191,11 +193,18 @@ footer p {
     font-size: 1.0rem;      /* Mengatur ukuran font agar lebih kecil */
     margin: 10px 0 5px;
     font-weight: bold;
+
+
 }
 
 .card p {
     font-size: 0.9rem; /* Mengatur ukuran font agar lebih kecil */
     margin: 10px 0;
+
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -212,15 +221,18 @@ footer p {
     scroll-behavior: smooth;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+
 }
 
 .carousel::-webkit-scrollbar {
     display: none; /* Menghilangkan scrollbar di browser berbasis Webkit */
+
 }
 
 .carousel {
     -ms-overflow-style: none;  /* Menghilangkan scrollbar di IE dan Edge */
     scrollbar-width: none;     /* Menghilangkan scrollbar di Firefox */
+
 }
 
 .card {
@@ -284,3 +296,57 @@ footer p {
     color: #F4D06F; /* Warna teks email lebih terang */
 }
 
+/* TODO DIBAWAH INI CSS BUAT PAGE EVENTDETAIL*/
+.event-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.event-image {
+    flex: 1; /* Memungkinkan gambar untuk mengambil ruang yang sesuai */
+    max-width: 400px; /* Ukuran maksimum untuk gambar */
+    margin-right: 20px; /* Jarak antara gambar dan info acara */
+}
+
+.event-image img {
+    width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.event-info {
+    flex: 1; /* Mengurangi lebar box informasi */
+    background-color: #f9f9f9; /* Warna latar belakang box info */
+    padding: 15px; /* Padding dalam box */
+    border-radius: 5px; /* Sudut melengkung untuk box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan kedalaman */
+    margin-right: 10px; /* Jarak antara box info dan box harga tiket */
+}
+
+.event-info h3, .event-info p {
+    color: #333; /* Warna teks hitam untuk informasi acara */
+}
+
+.ticket-info {
+    flex: 1; /* Mengatur box harga tiket */
+    background-color: #f0f0f0; /* Warna latar belakang untuk box harga tiket */
+    padding: 15px; /* Padding dalam box */
+    border-radius: 5px; /* Sudut melengkung untuk box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan kedalaman */
+}
+
+.ticket-info h3 {
+    color: #333; /* Warna teks hitam untuk harga tiket */
+}
+
+.event-details {
+    margin: 10px 0; /* Jarak atas dan bawah untuk detail */
+}
+
+.event-description {
+    margin-top: 15px; /* Jarak atas untuk memisahkan deskripsi dari gambar dan box info */
+    font-size: 1.1em; /* Ukuran font untuk deskripsi */
+    color: white; /* Warna teks deskripsi menjadi putih */
+    padding: 10px; /* Padding untuk memberikan ruang di sekitar teks deskripsi */
+
+}
