@@ -296,16 +296,17 @@ footer p {
     color: #F4D06F; /* Warna teks email lebih terang */
 }
 
-/* TODO DIBAWAH INI CSS BUAT PAGE EVENTDETAIL*/
+        /* TODO DIBAWAH INI CSS BUAT PAGE EVENTDETAIL*/
 .event-content {
     display: flex;
     align-items: flex-start;
+    gap: 20px;
     margin-bottom: 20px; /* Jarak bawah */
 }
 
 .event-image {
     flex: 1; /* Memungkinkan gambar untuk mengambil ruang yang sesuai */
-    max-width: 400px; /* Ukuran maksimum untuk gambar */
+    max-width: 600px; /* Ukuran maksimum untuk gambar */
     margin-right: 20px; /* Jarak antara gambar dan info acara */
 }
 
@@ -324,7 +325,7 @@ footer p {
 }
 
 .event-info h3, .event-info p {
-    color: #333; /* Warna teks hitam untuk informasi acara */
+    color: #392F5A; /* Warna teks hitam untuk informasi acara */
 }
 
 .ticket-info {
@@ -336,7 +337,7 @@ footer p {
 }
 
 .ticket-info h3 {
-    color: #333; /* Warna teks hitam untuk harga tiket */
+    color: #392F5A; /* Warna teks hitam untuk harga tiket */
 }
 
 .event-details {

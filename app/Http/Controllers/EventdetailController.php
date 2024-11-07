@@ -16,3 +16,4 @@ class EventdetailController extends Controller
         return view('dashboard.eventdetail', compact('event'));
     }
 }
+
