@@ -356,6 +356,7 @@ footer p {
 .buy-ticket-page {
     display: flex;
     gap: 20px;
+    padding: 20px; /* enak banget dilihatnya, jangan diapus */
 }
 
 .ticket-category {
@@ -363,10 +364,14 @@ footer p {
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
+    max-width: 750px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .ticket-category h2 {
     color: #ff9900;
+    margin-bottom: 15px; /* Jarak bawah untuk heading */
 }
 
 .ticket-option {
@@ -398,6 +403,7 @@ footer p {
     border-radius: 5px;
 }
 
+/* Order Summary Styles */
 .order-summary {
     flex: 1;
     background-color: #ffffff;
@@ -408,6 +414,7 @@ footer p {
 
 .order-summary h3 {
     color: #333;
+    margin-bottom: 15px; /* Jarak bawah untuk heading */
 }
 
 .checkout-btn {
@@ -424,3 +431,15 @@ footer p {
     background-color: #ccc;
     cursor: not-allowed;
 }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .buy-ticket-page {
+        flex-direction: column;
+        }
+    }
+
+    .ticket-category,
+    .order-summary {
+        max-width: 100%;
+    }
