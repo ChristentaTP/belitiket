@@ -16,14 +16,14 @@
         </div>
     </div>
 
-    <!--  box tiket  -->
+    <!--  Box Tiket -->
     <div class="ticket-info">
         <p>Tickets starting at</p>
         <h3>Rp. {{ number_format($event->ticketOptions->min('harga'), 0, ',', '.') }}</h3>
-        <button class="buy-ticket-button">Buy Tickets</button>
+        <a href="{{ route('buy-ticket', $event->id) }}" class="buy-ticket-button">Buy Tickets</a>
     </div>
 
-    <!-- Deskripsi Event  -->
+    <!-- Deskripsi Event -->
     <h3>Deskripsi</h3>
     <p class="event-description">{{ $event->deskripsi }}</p>
 

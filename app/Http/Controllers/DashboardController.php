@@ -9,8 +9,10 @@ class DashboardController extends Controller
 {
     public function index()
     {
+        //ngambil semua event beserta tiketnya
         $events = Event::with('ticketOptions')->get(); // Mengambil semua event
 
+        //Mengirim data event ke view 'index'
         return view('dashboard.index', compact('events'));
     }
 }

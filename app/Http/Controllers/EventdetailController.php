@@ -9,7 +9,7 @@ class EventdetailController extends Controller
 {
     public function show($id)
     {
-        // Mengambil event berdasarkan ID
+        // Mengambil event berdasarkan ID dengan relasi 'ticketOptions'
         $event = Event::with('ticketOptions')->findOrFail($id);
 
         // Menampilkan view 'eventdetail' dengan data event

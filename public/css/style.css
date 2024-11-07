@@ -297,6 +297,7 @@ footer p {
 }
 
         /* TODO DIBAWAH INI CSS BUAT PAGE EVENTDETAIL*/
+
 .event-content {
     display: flex;
     align-items: flex-start;
@@ -325,7 +326,7 @@ footer p {
 }
 
 .event-info h3, .event-info p {
-    color: #392F5A; /* Warna teks hitam untuk informasi acara */
+    color: #333; /* Warna teks hitam untuk informasi acara */
 }
 
 .ticket-info {
@@ -337,7 +338,7 @@ footer p {
 }
 
 .ticket-info h3 {
-    color: #392F5A; /* Warna teks hitam untuk harga tiket */
+    color: #333; /* Warna teks hitam untuk harga tiket */
 }
 
 .event-details {
@@ -349,5 +350,77 @@ footer p {
     font-size: 1.1em; /* Ukuran font untuk deskripsi */
     color: white; /* Warna teks deskripsi menjadi putih */
     padding: 10px; /* Padding untuk memberikan ruang di sekitar teks deskripsi */
+}
 
+/* TODO DIBAWAH INI CSS BUAT PAGE BUY TICKET*/
+.buy-ticket-page {
+    display: flex;
+    gap: 20px;
+}
+
+.ticket-category {
+    flex: 2;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ticket-category h2 {
+    color: #ff9900;
+}
+
+.ticket-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-price {
+    color: #333;
+}
+
+.ticket-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.order-summary {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h3 {
+    color: #333;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
