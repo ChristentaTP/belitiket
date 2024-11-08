@@ -443,3 +443,46 @@ footer p {
     .order-summary {
         max-width: 100%;
     }
+
+/* TODO DIBAWAH INI CSS BUAT PAGE HISTORY*/
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Membuat container bisa di-scroll secara horizontal */
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none; /* Menghilangkan scrollbar */
+}
+
+.card {
+    background-color: #F4D06F;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    min-width: 200px; /* Ukuran minimum untuk setiap card */
+    scroll-snap-align: start;
+    text-align: left;
+    color: #392F5A;
+    flex: none; /* Memastikan card tidak meluas */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efek zoom in saat hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
