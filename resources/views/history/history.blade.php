@@ -1,8 +1,8 @@
 @extends('layout.layout')
-
 @section('title', 'Riwayat Pembelian')
-
 @section('content')
+
+
     <h1>Riwayat Pembelian</h1>
     <ul>
         @foreach ($historyData as $order)
