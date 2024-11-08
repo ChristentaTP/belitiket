@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HistoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
@@ -18,3 +19,6 @@ Route::get('/event/{id}', [EventdetailController::class,'show'])->name('event.sh
 
 //Routes dari event detail ke halaman pilih tiket (BuyTicketsController)
 Route::get('/buy-ticket/{event_id}', [BuyTicketsController::class, 'index'])->name('buy-ticket');
+
+//Routing ke halaman History lewat lingkaran profile
+Route::get('/history', [HistoryController::class, 'index'])->name('profile.history');

@@ -22,7 +22,11 @@
     <div class="avatar">
         <div class="avatar-circle">L</div>
         <div class="dropdown">
-            <a href="{{ route('profile.index') }}">Profile</a> <!-- Update the href route -->
+
+            <!-- Tambahkan dalam dropdown pada avatar -->
+
+            <a href="{{ route('profile.index') }}">Profile</a>      <!-- href route ke halaman profile -->
+            <a href="{{ route('profile.history') }}">History</a>    <!-- href route ke halaman logout-->
             <a href="#">Logout</a>
         </div>
     </div>
