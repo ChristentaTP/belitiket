@@ -19,17 +19,16 @@
     <nav class="nav-menu">
         <!-- Menu atau navigasi lain bisa ditambahkan di sini -->
     </nav>
+    @if (!request()->is('login'))
     <div class="avatar">
         <div class="avatar-circle">L</div>
         <div class="dropdown">
-
-            <!-- Tambahkan dalam dropdown pada avatar -->
-
-            <a href="{{ route('profile.index') }}">Profile</a>      <!-- href route ke halaman profile -->
-            <a href="{{ route('profile.history') }}">History</a>    <!-- href route ke halaman logout-->
-            <a href="#">Logout</a>
+            <a href="{{ route('profile.index') }}">Profile</a>
+            <a href="{{ route('profile.history') }}">History</a>
+            <a href="{{ route('login') }}">Logout</a>
         </div>
     </div>
+    @endif
 </header>
 
 <!-- Main Content -->
