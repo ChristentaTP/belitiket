@@ -22,3 +22,5 @@ Route::get('/buy-ticket/{event_id}', [BuyTicketsController::class, 'index'])->na
 
 //Routing ke halaman History lewat lingkaran profile
 Route::get('/history', [HistoryController::class, 'index'])->name('profile.history');
+//route login
+Route::get('/login', [\App\Http\Controllers\LoginController::class, 'index'])->name('profile.login');
