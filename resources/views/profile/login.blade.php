@@ -6,18 +6,23 @@
     <div class="login-container">
         <div class="login-card">
             <h2>Login</h2>
-            <form action="{{ route('login') }}" method="POST">
+
+            <form action="{{ route('profile.login.post') }}" method="POST">
                 @csrf
-                <div class="form-group">
+                <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" name="email" id="email" required>
                 </div>
-                <div class="form-group">
+
+                <div>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" name="password" id="password" required>
                 </div>
-                <button type="submit" class="login-button">Login</button>
+
+                <div>
+                    <button type="submit">Login</button>
+                </div>
             </form>
+
         </div>
-    </div>
 @endsection

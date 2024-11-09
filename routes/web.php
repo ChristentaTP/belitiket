@@ -29,4 +29,3 @@ Route::get('/history', [HistoryController::class, 'index'])->name('profile.histo
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-

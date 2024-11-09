@@ -36,4 +36,7 @@
             carousel.scrollBy({ left: cardWidth * direction, behavior: 'smooth' });
         }
     </script>
+
+
+
 @endsection
