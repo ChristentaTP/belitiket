@@ -23,7 +23,7 @@
     <div class="avatar">
         <div class="avatar-circle">L</div>
         <div class="dropdown">
-            <a href="{{ route('profile.index') }}">Profile</a>
+            <a href="{{ route('profile.profile') }}">Profile</a>
             <a href="{{ route('profile.history') }}">History</a>
             <a href="{{ route('login') }}">Logout</a>
         </div>

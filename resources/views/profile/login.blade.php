@@ -7,7 +7,7 @@
         <div class="login-card">
             <h2>Login</h2>
 
-            <form action="{{ route('profile.login.post') }}" method="POST">
+            <form action="{{ route('login.post') }}" method="POST">
                 @csrf
                 <div>
                     <label for="email">Email</label>
@@ -24,5 +24,9 @@
                 </div>
             </form>
 
+            <div class="signup-link">
+                <p>Belum punya akun? <a href="{{ route('register') }}">Buat akun baru</a></p>
+            </div>
         </div>
+    </div>
 @endsection
