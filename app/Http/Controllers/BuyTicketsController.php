@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Event;
-use App\Models\TicketOption;
+use App\Models\Ticket;
 
 class BuyTicketsController extends Controller
 {
@@ -15,7 +15,7 @@ class BuyTicketsController extends Controller
         $event = Event::findOrFail($event_id);
 
         //pilihan tiket berdasarkan event_id
-        $ticketOptions = TicketOption::where('event_id', $event_id)->get();
+        $ticketOptions = Ticket::where('event_id', $event_id)->get();
 
         return view('dashboard.buytickets', compact('event', 'ticketOptions'));
     }

@@ -18,8 +18,9 @@ class Event extends Model
         'pilihan_tiket'
     ];
 
-    public function ticketOptions()
+    // Relasi dengan model Ticket
+    public function tickets()
     {
-        return $this->hasMany(TicketOption::class);
+        return $this->hasMany(Ticket::class, 'event_id');
     }
 }

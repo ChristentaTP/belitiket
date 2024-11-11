@@ -19,7 +19,7 @@
             <!-- Ticket Information -->
             <div class="ticket-info">
                 <p>Tickets starting at</p>
-                <h3>Rp. {{ number_format($event->ticketOptions->min('harga'), 0, ',', '.') }}</h3>
+                <h3>Rp. {{ number_format($event->tickets->min('harga'), 0, ',', '.') }}</h3>
                 <a href="{{ route('buy-ticket', $event->id) }}" class="buy-ticket-button">Buy Tickets</a>
             </div>
         </div>
